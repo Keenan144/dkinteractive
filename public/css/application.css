@@ -74,7 +74,7 @@ body {
 
 /*====================== Homepage ========================*/
 .centertext{
-  visibility: hidden;
+  visibility: visible;
   background-color: rgb(100,100,100);
   background-color: rgba(10,10,10, 0.4);
 
@@ -107,7 +107,7 @@ body {
   /*border: 2px dashed blue;*/
 }
 
-.left_column{
+.left_column, .right_column{
   /*border: 3px dashed green;*/
   width: 12%;
   border-radius: 10px;
@@ -119,6 +119,11 @@ body {
   margin-bottom: 10%;
   background-color: rgb(10,10,10);
   background-color: rgba(10,10,10,0.4);
+}
+
+.right_column{
+  margin-left: 87%;
+  margin-top: -580px;
 }
 .myprojectsheader{
   text-align: center;
@@ -142,7 +147,7 @@ body {
     .top_title{
       margin-top: 1%;
     }
-    .left_column{
+    .left_column, .right_column, .bottom_container, .bottombar{
       display: none;
     }
     .small_screen_projects_bar{
@@ -161,7 +166,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
   }
-  .top_title, .bottombar{
+  .top_title, .bottombar, .left_column, .right_column{
     display: none;
   }
   .navbar{
@@ -175,9 +180,6 @@ body {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-  }
-  .left_column{
-    display: none;
   }
   .small_screen_projects_bar{
     visibility: visible;
